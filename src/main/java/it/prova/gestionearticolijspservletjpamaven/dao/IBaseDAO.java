@@ -5,6 +5,8 @@ package it.prova.gestionearticolijspservletjpamaven.dao;
 
 	import java.util.List;
 
+import it.prova.gestionearticolijspservletjpamaven.model.Articolo;
+
 
 
 	public interface IBaseDAO<T> {
@@ -21,6 +23,8 @@ package it.prova.gestionearticolijspservletjpamaven.dao;
 
 		// questo mi serve per l'injection
 		public void setEntityManager(EntityManager entityManager);
+
+		
 
 	}
 
