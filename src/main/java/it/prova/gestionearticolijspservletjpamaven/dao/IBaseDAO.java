@@ -20,7 +20,7 @@ package it.prova.gestionearticolijspservletjpamaven.dao;
 		public void delete(T o) throws Exception;
 
 		// questo mi serve per l'injection
-		public void setEntityManager(EntityManager entityManager);
+		public void setEntityManager(EntityManager enti
 
 	}
 
