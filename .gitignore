@@ -1,34 +1,47 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# File temporanei creati dall'IDE o dal sistema operativo
+*.class
+*.log
+*.swp
+*.tmp
+*.tmp.*
+*.bak
+*.cache
+*.diff
+*.patch
+*.orig
+*.pyc
+*.pyo
 
-### STS ###
-.apt_generated
+# File di configurazione dell'IDE
+.settings/
 .classpath
-.factorypath
 .project
-.settings
-.springBeans
-.sts4-cache
-/bin/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Output del processo di build
+bin/
+build/
+target/
+
+# File generati automaticamente durante la compilazione
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# File di dipendenze e configurazione specifici per l'ambiente di sviluppo
+.idea/
+.gradle/
+.vscode/
 *.iml
 *.ipr
+*.iws
+*.prefs
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Cartella del server locale o del container (es. Tomcat)
+.tomcat/
+.jetty/
 
-### VS Code ###
-.vscode/
+# File di configurazione specifici del sistema operativo
+.DS_Store
+Thumbs.db
