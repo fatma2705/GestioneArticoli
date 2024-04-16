@@ -2,12 +2,29 @@ package it.prova.gestionearticolijspservletjpamaven.model;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+
+@Entity
+@Table(name = "articolo")
 public class Articolo {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
 	private Long id;
+	@Column(name = "codice")
 	private String codice;
+	@Column( name = "descrizione")
 	private String descrizione;
+	@Column( name = "prezzo")
 	private float prezzo;
+	@Column( name = "data_arrivo")
 	private LocalDate dataArrivo;
 	
 	
